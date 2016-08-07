@@ -1,0 +1,53 @@
+#N canvas 382 44 611 477 10;
+#X obj 54 209 adc~;
+#X obj 56 323 writesf~ 2;
+#X msg 157 262 start;
+#X msg 154 291 stop;
+#X msg 157 236 open \$1;
+#X symbolatom 157 210 10 0 0 0 - - -;
+#X obj 156 189 makefilename rec%s.wav;
+#X obj 230 224 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 256 224 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 198 287 print startpass;
+#X obj 200 313 print stoppass;
+#X obj 277 59 fiddle~ 1024 1 20 3;
+#X floatatom 334 105 5 0 0 0 - - -;
+#X obj 277 27 *~;
+#X obj 276 -12 adc~;
+#X floatatom 392 105 5 0 0 0 - - -;
+#X obj 359 133 >;
+#X floatatom 358 159 5 0 0 0 - - -;
+#X obj 396 248 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 431 248 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 358 192 sel 0 1;
+#X obj 435 293 +;
+#X floatatom 439 334 5 0 0 0 - - -;
+#X msg 473 249 1;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 2 0 1 0;
+#X connect 2 0 9 0;
+#X connect 3 0 1 0;
+#X connect 3 0 10 0;
+#X connect 4 0 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 3 0;
+#X connect 8 0 2 0;
+#X connect 11 3 12 0;
+#X connect 12 0 16 0;
+#X connect 13 0 11 0;
+#X connect 14 0 13 0;
+#X connect 14 0 13 1;
+#X connect 15 0 16 1;
+#X connect 16 0 17 0;
+#X connect 17 0 20 0;
+#X connect 20 0 18 0;
+#X connect 20 1 19 0;
+#X connect 21 0 22 0;
+#X connect 22 0 21 1;
+#X connect 23 0 21 0;
