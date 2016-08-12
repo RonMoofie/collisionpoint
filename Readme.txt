@@ -12,5 +12,9 @@ Next steps...
 4. Create an interface for users to choose sounds to be controlled by each tracked object
 5. Make Processing stop sending locational data when neither ball is in view of camera
 6. Make Processing stop sending locational data and stop the cycle when the ball disappears down the middle of the table
-7. Make Processing record how long each play takes in seconds and output an average of this to Pd for the "Target Duration" field
+
+Version 0.1.1 - 10/08/2016
+
+Added:  Timer on Processing showing when the recording has started and how the user has been recording for.  It then shows the file name for that sound file after it has stopped recording.
+	Granulation on collision now can be altered in amount, rate, and depth.  It now also is adjusted to the length of the sample.
 
