@@ -13,8 +13,10 @@ Next steps...
 5. Make Processing stop sending locational data when neither ball is in view of camera
 6. Make Processing stop sending locational data and stop the cycle when the ball disappears down the middle of the table
 
-Version 0.1.1 - 10/08/2016
+Version 0.1.1 - 12/08/2016
 
 Added:  Timer on Processing showing when the recording has started and how the user has been recording for.  It then shows the file name for that sound file after it has stopped recording.
 	Granulation on collision now can be altered in amount, rate, and depth.  It now also is adjusted to the length of the sample.
 
+
+Fixed: Sending of data from Processing to Pd via Osc.  OscMessage now clears arguments before each send.
